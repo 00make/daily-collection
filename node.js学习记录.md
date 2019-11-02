@@ -78,19 +78,6 @@ npm install npm -g        //windows升级npm可使用命令
 npm install -g cnpm --registry=https://registry.npm.taobao.org    //通过（淘宝）镜像升级npm可使用命令
 ```
     
-
-## 使用淘宝 NPM 镜像
-
-使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
-```javascript
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-```
-
-这样就可以使用 cnpm 命令来安装模块了：
-```javascript
-cnpm install [name]
-```
-
 ## 使用 npm 安装各种模块
 
 以下实例，我们使用 npm 命令安装常用的 Node.js web框架模块 express:
@@ -102,6 +89,18 @@ npm install express -g   //全局安装
 安装好之后，express 包就放在了工程目录下的 node_modules 目录中，因此在代码中只需要通过 require('express') 的方式就好，无需指定第三方包路径。
 ```javascript
 var express = require('express');
+```
+
+## 使用淘宝 NPM 镜像
+
+使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm，加速:
+```javascript
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+这样就可以使用 cnpm 命令来安装模块了：
+```javascript
+cnpm install [name]
 ```
 
 ## 常用命令

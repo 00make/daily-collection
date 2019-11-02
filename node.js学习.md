@@ -1,6 +1,8 @@
-安装
+## 安装
+Node.js 安装包及源码下载地址为：https://nodejs.org/en/download/
 
-成功标准：cmd： node -v可显示版本号&node加入path环境
+成功标准：cmd：node -v可显示版本号&node已加入path环境
 
+> 安装新版node时有个附加工具会给你装一堆additional环境，简单好用
 
-PS:安装新版node时有个附加工具会给你装一堆additional环境，简单好用
+----

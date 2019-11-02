@@ -10,7 +10,9 @@ Webpack 是一个前端资源加载/打包工具，根据模块的关系进行�
 由于 npm 安装速度慢，本教程使用了淘宝的镜像及其命令 cnpm，安装使用参照：node.js学习记录-NPM使用介绍-使用淘宝 NPM 镜像
 ```javascript
 npm install webpack -g   //使用 npm 安装 webpack
+npm install webpack-cli -g 
 cnpm install webpack -g  //使用 cnpm 安装 webpack
+cnpm install webpack-cli -g
 ```
 
 # 使用webpack打包
@@ -41,7 +43,7 @@ index.html 文件代码如下
 
 进行打包
 ```javascript
-webpack runoob1.js bundle.js  //其实这一步我运行时无法正确生成，报Error: Cannot find module 'webpack-cli'
+webpack runoob1.js bundle.js  //其实这一步我运行时无法正确生成，报Error: Cannot find module 'webpack-cli'，我都装了一下
 ```
 执行以上命令会编译 runoob1.js 文件并生成bundle.js 文件
 webpack 根据模块的依赖关系进行静态分析，这些文件(模块)会被包含到 bundle.js 文件中。

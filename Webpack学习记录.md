@@ -28,7 +28,7 @@ module.exports = "It works from runoob2.js.";
 ```
 
 index.html 文件代码如下
-```javascript
+```html
 <html>
     <head>
         <meta charset="utf-8">

@@ -1,3 +1,6 @@
+# node.js学习记录
+---
+
 # 安装
 ---
 Node.js 安装包及源码下载地址为：https://nodejs.org/en/download/
@@ -5,6 +8,7 @@ Node.js 安装包及源码下载地址为：https://nodejs.org/en/download/
 安装成功标准：cmd：node -v可显示版本号&node已加入path环境
 
 > 安装新版node时有个附加工具会给你装一堆additional环境，简单好用
+
 
 
 
@@ -25,7 +29,6 @@ Node.js 安装包及源码下载地址为：https://nodejs.org/en/download/
 ```javascript
   //请求（require）Node.js 自带的 http 模块，并且把它赋值给 http 变量。
   var http = require("http");
-  
 ```
 ## 步骤二、创建服务器
 
@@ -60,3 +63,54 @@ Server running at http://127.0.0.1:8888/
 
 接下来，打开浏览器访问 http://127.0.0.1:8888/   ,会看到一个写着 "Hello World"的网页，第一个应用创建成功。
 
+
+
+
+# NPM 使用介绍
+---
+NPM是随同NodeJS一起安装的包管理工具，
+允许用户从NPM服务器（上传，下载，安装）（本地或别人）编写的（第三方包或命令行程序）到（本地或供别人）使用。
+
+## 安装测试
+```javascript
+npm -v          //测试是否成功安装
+npm install npm -g        //windows升级npm可使用命令 
+npm install -g cnpm --registry=https://registry.npm.taobao.org    //通过（淘宝）镜像升级npm可使用命令
+```
+    
+
+## 使用淘宝 NPM 镜像
+
+使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
+```javascript
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+这样就可以使用 cnpm 命令来安装模块了：
+```javascript
+cnpm install [name]
+```
+
+## 使用 npm 安装各种模块
+
+以下实例，我们使用 npm 命令安装常用的 Node.js web框架模块 express:
+```javascript
+npm install express      //本地安装
+npm install express -g   //全局安装
+```
+
+安装好之后，express 包就放在了工程目录下的 node_modules 目录中，因此在代码中只需要通过 require('express') 的方式就好，无需指定第三方包路径。
+```javascript
+var express = require('express');
+```
+
+## 常用命令
+
+```javascript
+npm list              //查看所有本地安装的模块
+npm list -g           //查看所有全局安装的模块
+npm uninstall express //卸载模块
+npm update express    //更新模块
+npm help              //查看所有命令
+
+```

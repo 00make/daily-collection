@@ -1,4 +1,4 @@
-## 安装
+# 安装
  ---
  
 需要有nodejs初始环境 
@@ -9,15 +9,14 @@
 安装 vue-cli          cnpm install -g vue-cli
 
 
-
 # 开始项目初始化。
 ---
 
 在cmd里用cd命令跳转到指定目录，运行项目初始化命令：
 ```javascript
 vue init webpack [vue-projectname]    //这个过程中会下载官方模板&进行项目初始化
+   //vue-projectname文件夹会自动生成在你跳转到的目录中
 ```
-vue-projectname文件夹会自动生成在你跳转到的目录中。
 
 
 cd到我们的项目文件夹d:\Vue\vue-projectname中，运行命令
@@ -25,14 +24,16 @@ cd到我们的项目文件夹d:\Vue\vue-projectname中，运行命令
 cnpm install
 ```
 
+
 测试项目是否安装成功。
 ```javascript
 cnpm run dev
 ```
 
 
- ```html
- 
+# 第一个实例
+---
+```html
  <!DOCTYPE html>
 <html>
 <head>

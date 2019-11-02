@@ -9,7 +9,7 @@
 安装 vue-cli          cnpm install -g vue-cli
 
 
-# 开始项目初始化。
+# 一个项目的初始化
 ---
 
 在cmd里用cd命令跳转到指定目录，运行项目初始化命令：
@@ -57,3 +57,6 @@ new Vue({
 </body>
 </html>
 ```
+
+# Vue.js 目录结构
+在IDE（例如webstrom）中打开项目

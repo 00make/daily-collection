@@ -2,12 +2,15 @@
  ---
  
 需要有nodejs初始环境 
+
+
 在cmd内，运行如下
+```javascript
 安装express（选择安装）cnpm install -g express
 安装webpack           cnpm install -g webpack
 安装vue               cnpm install vue
 安装 vue-cli          cnpm install -g vue-cli
-
+```
 
 # 一个项目的初始化
 ---

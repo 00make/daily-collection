@@ -7,3 +7,5 @@
 
 ## 4.执行以下命令（一行）
 wget -O- （订阅地址） | bash && echo -e "\n0 */3 * * * wget -O- （订阅地址） | bash\n">> /etc/storage/cron/crontabs/admin && killall crond && crond
+
+## 事实上，在路由器管理页面ss功能内直接配置也可以

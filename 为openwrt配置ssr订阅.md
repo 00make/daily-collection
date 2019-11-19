@@ -1,4 +1,4 @@
-#为openwrt配置ssr订阅
+# 为openwrt配置ssr订阅
 
 ## 1.利用ipconfig /all获取路由器ip（默认网关）
 

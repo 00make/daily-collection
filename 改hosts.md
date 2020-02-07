@@ -4,7 +4,9 @@
 
 1.获取hosts文件
 
-具体可以打开下面的网址：https://cdn.jsdelivr.net/gh/googlehosts/hosts/hosts-files/hosts，然后会下载一个名为hosts的文件
+具体可以打开下面的网址：https://cdn.jsdelivr.net/gh/googlehosts/hosts/hosts-files/hosts
+
+然后会下载一个名为hosts的文件
 
 2.把老hosts里面自定义的内容复制到下载的hosts里面
 
